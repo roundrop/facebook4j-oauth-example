@@ -1,0 +1,6 @@
+.DS_Store
+.classpath
+.project
+.settings/
+target
+facebook4j.properties

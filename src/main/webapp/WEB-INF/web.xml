@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+  id="WebApp_ID" version="2.5">
+
+  <servlet>
+    <servlet-name>signin</servlet-name>
+    <servlet-class>facebook4j.examples.signin.SignInServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>callback</servlet-name>
+    <servlet-class>facebook4j.examples.signin.CallbackServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>logout</servlet-name>
+    <servlet-class>facebook4j.examples.signin.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>post</servlet-name>
+    <servlet-class>facebook4j.examples.signin.PostServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>signin</servlet-name>
+    <url-pattern>/signin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>callback</servlet-name>
+    <url-pattern>/callback</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>logout</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>post</servlet-name>
+    <url-pattern>/post</url-pattern>
+  </servlet-mapping>
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+  <error-page>
+    <exception-type>facebook4j.FacebookException</exception-type>
+    <location>/error.jsp</location>
+  </error-page>
+
+</web-app>
