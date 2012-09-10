@@ -18,7 +18,7 @@
     <dependency>
       <groupId>org.facebook4j</groupId>
       <artifactId>facebook4j-core</artifactId>
-      <version>0.1.0</version>
+      <version>0.1.1</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
