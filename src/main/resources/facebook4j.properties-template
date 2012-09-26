@@ -1,5 +1,5 @@
-facebook4j.debug=true
-facebook4j.oauth.appId=****************
-facebook4j.oauth.appSecret=********************************
-facebook4j.oauth.permissions=email,publish_stream
-facebook4j.jsonStoreEnabled=true
+debug=true
+oauth.appId=****************
+oauth.appSecret=********************************
+oauth.permissions=email,publish_stream
+jsonStoreEnabled=true
