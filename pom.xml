@@ -4,7 +4,7 @@
   <groupId>org.facebook4j</groupId>
   <artifactId>sign-in-with-facebook</artifactId>
   <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
   <name>sign-in-with-facebook Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
@@ -18,7 +18,7 @@
     <dependency>
       <groupId>org.facebook4j</groupId>
       <artifactId>facebook4j-core</artifactId>
-      <version>[0.1,)</version>
+      <version>[1.0,)</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
