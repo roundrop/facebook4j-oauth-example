@@ -14,15 +14,21 @@ public class LogoutServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {      
         Facebook facebook = (Facebook) request.getSession().getAttribute("facebook");
-        String accessToken = "";
+        String accessToken;
         try {
         	accessToken = facebook.getOAuthAccessToken().getToken();
+
+            // Delete permissions for this Facebook App
+            facebook.deleteAllPermissions();
+
         } catch (Exception e) {
             throw new ServletException(e);
         }
+
+        // Invalidate the Session
         request.getSession().invalidate();
 
-        // Log Out of the Facebook
+        // Logout from the Facebook
         StringBuffer next = request.getRequestURL();
         int index = next.lastIndexOf("/");
         next.replace(index+1, next.length(), "");
