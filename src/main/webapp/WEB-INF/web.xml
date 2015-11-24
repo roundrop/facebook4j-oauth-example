@@ -20,6 +20,19 @@
     <servlet-name>post</servlet-name>
     <servlet-class>facebook4j.examples.signin.PostServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>tokenInfo</servlet-name>
+    <servlet-class>facebook4j.examples.signin.TokenInfoServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>gencode</servlet-name>
+    <servlet-class>facebook4j.examples.signin.device.GenDeviceCodeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>deviceSignin</servlet-name>
+    <servlet-class>facebook4j.examples.signin.device.DeviceSigninServlet</servlet-class>
+  </servlet>
 
   <servlet-mapping>
     <servlet-name>signin</servlet-name>
@@ -36,6 +49,19 @@
   <servlet-mapping>
     <servlet-name>post</servlet-name>
     <url-pattern>/post</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>tokenInfo</servlet-name>
+    <url-pattern>/tokenInfo</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>gencode</servlet-name>
+    <url-pattern>/gencode</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deviceSignin</servlet-name>
+    <url-pattern>/deviceSignin</url-pattern>
   </servlet-mapping>
 
   <welcome-file-list>
